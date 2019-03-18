@@ -26,14 +26,16 @@ class CurrencyRecyclerAdapter(private val currencyList: List<Stock>) :
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.name.text = "name: ${currencyList[position].name}"
-        holder.volume.text = "volume: ${currencyList[position].volume}"
-        holder.amount.text = "amount: ${currencyList[position].price.amount}"
+        holder.name.text = currencyList[position].name
+        holder.volume.text = currencyList[position].volume.toString()
+        holder.amount.text = String.format("%.2f", currencyList[position].price.amount)
     }
+
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val name = view.name!!
         val volume = view.volume!!
         val amount = view.amount!!
     }
+
 }

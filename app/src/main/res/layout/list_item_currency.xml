@@ -13,25 +13,24 @@
             android:layout_alignParentBottom="true"
             android:gravity="center_vertical"/>
     <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/volume"
             android:paddingStart="10dp"
             android:text="1000"
             android:layout_alignParentTop="true"
             android:layout_alignParentBottom="true"
-            android:gravity="center_vertical"
-            android:layout_toEndOf="@id/name"/>
+            android:gravity="center"/>
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/amount"
-            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
             android:text="12.03"
             android:layout_alignParentTop="true"
             android:layout_alignParentBottom="true"
-            android:gravity="center_vertical"
-    android:layout_toEndOf="@id/volume"/>
+            android:layout_alignParentEnd="true"
+            android:gravity="center_vertical"/>
 
     <View android:layout_width="match_parent"
           android:layout_height="2dp"
