@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">test_task</string>
+    <string name="main_activity">main activity</string>
+    <string name="action_refresh">refresh</string>
+</resources>
